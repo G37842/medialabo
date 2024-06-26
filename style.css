@@ -1,0 +1,43 @@
+h1 {
+	color: white;
+	text-shadow: navy 1px 0 10px;
+}
+h2 {
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(0.5turn, white, #ffefaf);
+	/*border: solid 1px white;*/
+	margin: 5px;
+}
+
+ul{
+    width: 1000px;
+    border: dashed rgb(11, 119, 227);
+    background-color: #ebe70f5e;
+}
+div#zentai {
+	display: grid;                      
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-auto-rows: 300px 300px;        
+    grid-gap: 10px;  
+	width: 1600px;
+}
+div#zentai > div {
+	margin-left: 10px;
+	background-color: #ebe70f5e;
+}
+div.x{
+    margin-left: 5px;
+	background-color: #8862abec;
+}
+
+a:link {
+    color: #fa0404d9;
+  }
+a:visited{
+    color: rgb(18, 131, 230);
+ }
+a:hover {
+    text-decoration: none;
+    color: green;
+  }
