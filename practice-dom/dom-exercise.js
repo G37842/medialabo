@@ -81,3 +81,10 @@ for (var li of listItems) {
     
     li.remove();
 }
+// 練習4-5 箇条書き追加プログラム
+let mm = document.querySelector('ul#location'); 
+for(let i= 0 ;i<data.length;i++){
+	let j = document.createElement('li');
+	j.textContent = data[i].name+"...緯度："+data[i].lat+",経度:"+data[i].lng;
+    mm.insertAdjacentElement('beforeend', j);
+}
