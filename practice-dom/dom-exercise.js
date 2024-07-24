@@ -77,14 +77,14 @@ img3.setAttribute('src', 'hanako.png');
 x3.insertAdjacentElement('beforeend', img3); 
 // 練習4-4 箇条書き削除プログラム
 let re = document.querySelectorAll('ul#location > li');
-for (var li of listItems) {
+for (let li of re) {
     
     li.remove();
 }
 // 練習4-5 箇条書き追加プログラム
 let mm = document.querySelector('ul#location'); 
-for(let i= 0 ;i<data.length;i++){
+for(let dd of data){
 	let j = document.createElement('li');
-	j.textContent = data[i].name+"...緯度："+data[i].lat+",経度:"+data[i].lng;
+	j.textContent = dd.name+"...緯度："+dd.lat+",経度:"+dd.lng;
     mm.insertAdjacentElement('beforeend', j);
 }

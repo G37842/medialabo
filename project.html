@@ -2,45 +2,39 @@
 <html >
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
+    <link rel="stylesheet" href="project.css">
     <title>世界の天気</title>
 </head>
 <body>
     <h1>世界の天気</h1>
- 
-    <h3>検索キー</h3>
-    <p>検索キーは genre （ジャンル）1つだけです．</p>
-    <ul>
-        <li>360630 ... Cairo カイロ （エジプト）</li>
-        <li>524901 ... Moscow モスクワ （ロシア）</li>
-        <li>993800 ... Johannesburg ヨハネスブルク （南アフリカ）</li>
-        <li>1816670 ... Beijing 北京 （中華人民共和国）</li>
-        <li>1850147 ... Tokyo 東京 （日本）</li>
-        <li>1880252 ... Singapore シンガポール</li>
-        <li>2147714 ... Sydney シドニー （オーストラリア）</li>
-        <li>2643743 ... London ロンドン （イギリス）</li>
-        <li>2968815 ... Paris パリ （フランス</li>
-        <li>3451189 ... Rio de Janeiro リオデジャネイロ （ブラジル）</li>
-        <li>5128581 ... New York ニューヨーク （アメリカ合衆国）</li>
-        <li>5368361 ... Los Angeles ロサンゼルス （アメリカ合衆国）</li>
-        </ul>
-    <p>項目名 	項目の説明</p>
-    <p>coord.lon 	緯度</p>
-    <p>coord.lat 	経度</p>
-    <p>weather[0].description 	天気</p>
-    <p>main.temp_min 	最低気温</p>
-    <p>main.temp_max 	最高気温</p>
-    <p>main.humidity 	湿度</p>
-    <p>wind.speed 	風速</p>
-    <p>wind.deg 	風向</p>
-    <p>name 	都市名</p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <label for="ct">都市の選択：</label>
+    <select name="ct" id="ct">
+        <option value="">都市を選んでください</option>
+        <option value="360630">Cairo カイロ</option>
+        <option value="524901">Moscow モスクワ （ロシア）</option>
+        <option value="993800">Johannesburg ヨハネスブルク （南アフリカ）</option>
+        <option value="1816670"> Beijing 北京 （中華人民共和国）</option>
+        <option value="1850147">Tokyo 東京 （日本）</option>
+        <option value="1880252"> Singapore シンガポール</option>
+        <option value="2147714">Sydney シドニー （オーストラリア）</option>
+        <option value="2643743">London ロンドン （イギリス）</option>
+        <option value="2968815">Paris パリ （フランス）</option>
+        <option value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル）</option>
+        <option value="5128581">New York ニューヨーク （アメリカ合衆国）</option>
+        <option value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国）</option>
+    </select>
+    <button id="sendRequest">確定</button>
+    <p id="lon"></p>
+    <p id="lat"></p>
+    <p id="weatherDescription"></p>
+    <p id="tempmin"></p>
+    <p id="tempmax"></p>
+    <p id="humidity"></p>
+    <p id="speed"></p>
+    <p id="deg"></p>
+    <p id="cityName"></p>
 
-    <div id="result"></div>
 </body>
 </html>

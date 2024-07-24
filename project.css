@@ -1,0 +1,32 @@
+
+p {
+	color: navy;
+    font-size: 10pt;
+	background-color:#e7edef;width: 200px;
+  
+    
+}
+label{
+    color: rgb(45, 145, 202);
+    font-size: 2em;
+}
+button{
+    color: rgb(62, 84, 183);
+}
+h1 {
+    
+	text-shadow: rgba(138, 238, 235, 0.703) 1px 0 10px;
+    color: #68bce6;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 5px solid #19e589;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 设置高度为视口高度 */
+    background-image: url('https://eiga.k-img.com/images/anime/news/108309/photo/111e11dda3a3aecf/640.jpg?1553855749');
+    background-size: cover; /* 使背景图像覆盖整个背景 */
+    background-repeat: no-repeat; /* 背景图像不重复 */
+    background-position: center center; /* 背景图像居中 */
+}
