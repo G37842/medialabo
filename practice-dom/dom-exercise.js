@@ -38,17 +38,15 @@ h2.insertAdjacentElement('afterend', p);
 
 
 let div = document.querySelector('div#phototable');
-undefined
-let x = document.createElement('p');
-undefined
-div.insertAdjacentElement('afterend', x);
 
+let x = document.createElement('p');
+
+div.insertAdjacentElement('beforeend', x);
 
 let img = document.createElement('img');
 
 img.setAttribute('src', 'taro.png');
 
-div.insertAdjacentElement('beforeend', img); 
 
 x.insertAdjacentElement('beforeend', img);
 
